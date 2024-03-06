@@ -1,0 +1,22 @@
+body
+{
+    
+    background-image: url('../images/CupCakes13c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ 
+}
+img
+{
+    max-width: 50%;
+    align-items: left;
+}
+.startpage
+{
+    display: flex;
+}
+.rightSide
+{
+    display: flex;
+}

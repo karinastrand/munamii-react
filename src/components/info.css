@@ -1,0 +1,8 @@
+.info
+{
+    text-align: center;
+}
+.info >img
+{
+  max-width: 30%;
+}

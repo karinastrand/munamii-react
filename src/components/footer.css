@@ -1,0 +1,21 @@
+.footer
+{ 
+    display:flex;
+    background-color: lavender;
+    
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer >ul
+{
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+}
+.footer > ul>li
+{
+    text-align: center;
+    padding: 2%;
+}

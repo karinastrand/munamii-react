@@ -1,13 +1,13 @@
 body
 {
     
-    background-image: url('../images/CupCakes13c.jpg');
+    background-image: url('./Images/CupCakes13c.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
  
 }
-img
+.rightSide>img
 {
     max-width: 50%;
     align-items: left;
@@ -16,7 +16,7 @@ img
 {
     display: flex;
 }
-.rightSide
+.rightSide 
 {
     display: flex;
 }

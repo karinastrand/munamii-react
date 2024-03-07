@@ -4,7 +4,7 @@
         "type":"Cupcake",
         "name":"CupCake 1",
         "price":"$ 3.00",
-        "src":"../images/CupCake1.png"
+        "src":"Images2/CupCake1.png"
         
     },
     {
@@ -12,232 +12,232 @@
         "type":"Cupcake",
         "name":"CupCake 2",
         "price":"$ 5.00",
-        "src":"../images/CupCake2.png"
+        "src":"Images2/CupCake2.png"
     },
     {
         "id":3,
         "type":"Cupcake",
         "name":"CupCake 3",
         "price":"$ 7.00",
-        "src":"../images/CupCake3.png"
+        "src":"Images2/CupCake3.png"
     },
     {
         "id":4,
         "type":"Cupcake",
         "name":"CupCake 4",
         "price":"$ 8.00",
-        "src":"../images/CupCake4.png"
+        "src":"Images2/CupCake4.png"
     },
     {
         "id":5,
         "type":"Cupcake",
         "name":"CupCake 5",
         "price":"$ 5.00",
-        "src":"../images/CupCake5.png"
+        "src":"Images2/CupCake5.png"
     },
     {
         "id":6,
         "type":"Cupcake",
         "name": "CupCake 6,",
         "price":"$ 3.00",
-        "src":"../images/CupCake6.png"
+        "src":"Images2/CupCake6.png"
     },
     {
         "id":7,
         "type":"Cupcake",
         "name":"CupCake 7",
         "price":"$ 7.00",
-        "src":"../images/CupCake7.png"
+        "src":"Images2/CupCake7.png"
     },
     {
         "id":8,
         "type":"Cupcake",
         "name":"CupCake 8",
         "price":"$ 4.00",
-        "src":"../images/CupCake8.png"
+        "src":"Images2/CupCake8.png"
     },
     {
         "id":9,
         "type":"Cupcake",
         "name":"CupCake 9",
         "price":"$ 6.00",
-        "src":"../images/CupCake9.png"
+        "src":"Images2/CupCake9.png"
     },
     {
         "id":10,
         "type":"Cupcake",
         "name":"CupCake 10",
         "price":"$ 9.00",
-        "src":"../images/CupCake10.png"
+        "src":"Images2/CupCake10.png"
     },
     {
         "id":11,
         "type":"Cupcake",
         "name":"CupCake 11",
         "price":"$ 8.00",
-        "src":"../images/CupCake11.png"
+        "src":"Images2/CupCake11.png"
     },
     {
         "id":12,
         "type":"Cupcake",
         "name":"CupCake 12",
         "price":"$ 5.00",
-        "src":"../images/CupCake12.png"
+        "src":"Images2/CupCake12.png"
     },
     {
         "id":13,
         "type":"Cupcake",
         "name":"CupCake 13",
         "price":"$ 4.00",
-        "src":"../images/CupCake13.png"
+        "src":"Images2/CupCake13.png"
     },
     {
         "id":14,
         "type":"Cupcake",
         "name":"CupCake 14",
         "price":"$ 7.00",
-        "src":"../images/CupCake14.png"
+        "src":"Images2/CupCake14.png"
     },
     {
         "id":15,
         "type":"Cupcake",
         "name":"CupCake 15",
         "price":"$ 6.00",
-        "src":"../images/CupCake15.png"
+        "src":"Images2/CupCake15.png"
     },
     {
         "id":16,
         "type":"Birthdaycake",
         "name":"BirthdayCake 1",
         "price":"$ 12.00",
-        "src":"../images/BirthdayCake1.png"
+        "src":"Images2/BirthdayCake1.png"
     },
     {
         "id":17,
         "type":"Birthdaycake",
         "name":"BirthdayCake 2",
         "price":"$ 18.00",
-        "src":"../images/BirthdayCake2.png"
+        "src":"Images2/BirthdayCake2.png"
     },
     {
         "id":18,
         "type":"Birthdaycake",
         "name":"BirthdayCake 3",
         "price":"$ 17.00",
-        "src":"../images/BirthdayCake3.png"
+        "src":"Images2/BirthdayCake3.png"
     },
     {
         "id":19,
         "type":"Birthdaycake",
-        "name":"BirthdayCake 14",
+        "name":"BirthdayCake 4",
         "price":"$ 14.00",
-        "src":"../images/BirthdayCake4.png"
+        "src":"Images2/BirthdayCake4.png"
     },
     {
         "id":20,
         "type":"Birthdaycake",
         "name":"BirthdayCake 5",
         "price":"$ 20.00",
-        "src":"../images/BirthdayCake5.png"
+        "src":"Images2/BirthdayCake5.png"
     },
     {
         "id":21,
         "type":"Birthdaycake",
         "name":"BirthdayCake 6",
         "price":"$ 19.00",
-        "src":"../images/BirthdayCake6.png"
+        "src":"Images2/BirthdayCake6.png"
     },
     {
         "id":22,
         "type":"Birthdaycake",
         "name":"BirthdayCake 7",
         "price":"$ 18.00",
-        "src":"../images/BirthdayCake7.png"
+        "src":"Images2/BirthdayCake7.png"
     },
     {
         "id":23,
         "type":"Birthdaycake",
         "name":"BirthdayCake 8",
         "price":"$ 15.00",
-        "src":"../images/BirthdayCake8.png"
+        "src":"Images2/BirthdayCake8.png"
     },
     {
         "id":24,
         "type":"Birthdaycake",
         "name":"BirthdayCake 9",
         "price":"$ 21.00",
-        "src":"../images/BirthdayCake9.png"
+        "src":"Images2/BirthdayCake9.png"
     },
 
     {
         "id":25,
         "type":"Birthdaycake",
         "name":"BirthdayCake 10",
-        "price":"$ 15.00",
-        "src":"../images/BirthdayCake10.png"
+        "price":"$ 25.00",
+        "src":"Images2/BirthdayCake10.png"
     },
     {
         "id":26,
         "type":"Weddingcake",
         "name":"WeddingCake 1",
         "price":"$ 42.00",
-        "src":"../images/WeddingCake1.png"
+        "src":"Images2/WeddingCake1.png"
     },
     {
         "id":27,
         "type":"Weddingcake",
         "name":"WeddingCake 2",
         "price":"$ 58.00",
-        "src":"../images/WeddingCake2.png"
+        "src":"Images2/WeddingCake2.png"
     },
     {
         "id":28,
         "type":"Weddingcake",
         "name":"WeddingCake 3",
         "price":"$ 47.00",
-        "src":"../images/WeddingCake3.png"
+        "src":"Images2/WeddingCake3.png"
     },
     {
         "id":29,
         "type":"Weddingcake",
-        "name":"WeddingCake 14",
+        "name":"WeddingCake 4",
         "price":"$ 34.00",
-        "src":"../images/WeddingCake4.png"
+        "src":"Images2/WeddingCake4.png"
     },
     {
         "id":30,
         "type":"Weddingcake",
         "name":"WeddingCake 5",
         "price":"$ 40.00",
-        "src":"../images/WeddingCake5.png"
+        "src":"Images2/WeddingCake5.png"
     },
     {
         "id":31,
-        "type":"Birthdaycake",
-        "name":"BirthdayCake 6",
+        "type":"Weddingcake",
+        "name":"WeddingCake 6",
         "price":"$ 59.00",
-        "src":"../images/WeddingCake6.png"
+        "src":"Images2/WeddingCake6.png"
     },
     {
         "id":32,
         "type":"Weddingcake",
         "name":"WeddingCake 7",
         "price":"$ 48.00",
-        "src":"../images/WeddingCake7.png"
+        "src":"Images2/WeddingCake7.png"
     },
     {
         "id":33,
-        "type":"Birthdaycake",
-        "name":"BirthdayCake 8",
-        "price":"$ 35.00",
-        "src":"../images/BirthdayCake8.png"
+        "type":"Weddingcake",
+        "name":"WeddingCake 8",
+        "price":"$ 45.00",
+        "src":"Images2/WeddingCake8.png"
     },
     {
         "id":34,
         "type":"Weddingcake",
         "name":"WeddingCake 9",
         "price":"$ 41.00",
-        "src":"../images/WeddingCake9.png"
+        "src":"Images2/WeddingCake9.png"
     },
 
     {
@@ -245,7 +245,7 @@
         "type":"Weddingcake",
         "name":"WeddingCake 10",
         "price":"$ 32.00",
-        "src":"../images/WeddingCake10.png"
+        "src":"Images2/WeddingCake10.png"
     }
 
 ]

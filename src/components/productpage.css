@@ -1,6 +1,20 @@
 .cakes
 {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
 }
+.cake
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    max-width: 30%;
+  
+}
+.cakedisplay
+{
+  
+    display: flex;
+    flex-wrap: wrap;
+}
+

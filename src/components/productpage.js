@@ -8,7 +8,7 @@ export default function productpage() {
   const allCupCakes=(values)=>{
     if(values.type==="Cupcake")
     return(
-      <div>
+      <div className='cake'>
         <Productcard
         src={values.src}
         name={values.name}
@@ -22,7 +22,7 @@ export default function productpage() {
   const allBirthdayCakes=(values)=>{
     if(values.type==="Birthdaycake")
     return(
-      <div>
+      <div className='cake'>
         <Productcard
         src={values.src}
         name={values.name}
@@ -36,7 +36,7 @@ export default function productpage() {
   const allWeddingCakes=(values)=>{
     if(values.type==="Weddingcake")
     return(
-      <div>
+      <div className='cake'>
         <Productcard
         src={values.src}
         name={values.name}
@@ -51,18 +51,27 @@ export default function productpage() {
     <div>
         <Menu />
         <h1>Products</h1>
+        
+        <div  className="cakes">
         <h2>CupCakes</h2>
-        <div className='cakes'>
-          
+        <div className="cakedisplay">
           {Data.map(allCupCakes)}
         </div>
-        <h2>BirthdayCakes</h2>
-        <div className='cakes'>
-          {Data.map(allBirthdayCakes)}
+          
         </div>
-        <h2>WeddingCakes</h2>
+        
         <div className='cakes'>
-          {Data.map(allWeddingCakes)}
+        <h2>BirthdayCakes</h2>
+          <div className="cakedisplay">
+            {Data.map(allBirthdayCakes)}
+          </div>
+        </div>
+        
+        <div className='cakes'>
+        <h2>WeddingCakes</h2>
+          <div className="cakedisplay">
+            {Data.map(allWeddingCakes)}
+          </div>
         </div>
         <Footer />
     </div>

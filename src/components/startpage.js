@@ -1,5 +1,5 @@
   import React from 'react'
-  import img from '../images/StartCake.png'
+  import img from './Images/StartCake.png'
   import './startpage.css'
   import Menu from './menu.js'
   import Info from './info.js';

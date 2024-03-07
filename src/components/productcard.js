@@ -8,12 +8,18 @@ export default function productcard(data) {
         <input type="hidden" id={type} />
         <img 
         src={src}
-        alt="cake" 
-        max-width="30%" 
-        height="auto"
+        alt="cake"  
+        className='imgstyle'
         />
-        <h6>{name}</h6>
-        <p>{price}</p>
+        <br/>
+        <item className='name' >
+          {name}
+        </item>
+        <br/>
+        <item className='price' >
+          {price}
+        </item>
+        <br/>
         <button>Buy</button>
 
     </div>

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/,munamii-react/static/css/main.e4fbf074.css",
-    "main.js": "/,munamii-react/static/js/main.0b5a4df8.js",
-    "static/js/453.051e4fd5.chunk.js": "/,munamii-react/static/js/453.051e4fd5.chunk.js",
-    "static/media/StartCake.png": "/,munamii-react/static/media/StartCake.b423fe948bfc9f909284.png",
-    "static/media/CupCakes13c.jpg": "/,munamii-react/static/media/CupCakes13c.0901ed0cfc70e8f54cc4.jpg",
-    "static/media/munamii.png": "/,munamii-react/static/media/munamii.44ddf12f1e8d4989f58d.png",
-    "index.html": "/,munamii-react/index.html",
-    "main.e4fbf074.css.map": "/,munamii-react/static/css/main.e4fbf074.css.map",
-    "main.0b5a4df8.js.map": "/,munamii-react/static/js/main.0b5a4df8.js.map",
-    "453.051e4fd5.chunk.js.map": "/,munamii-react/static/js/453.051e4fd5.chunk.js.map"
+    "main.css": "/munamii-react/static/css/main.83269fdf.css",
+    "main.js": "/munamii-react/static/js/main.953636cf.js",
+    "static/js/453.051e4fd5.chunk.js": "/munamii-react/static/js/453.051e4fd5.chunk.js",
+    "static/media/StartCake.png": "/munamii-react/static/media/StartCake.b423fe948bfc9f909284.png",
+    "static/media/CupCakes13c.jpg": "/munamii-react/static/media/CupCakes13c.0901ed0cfc70e8f54cc4.jpg",
+    "static/media/munamii.png": "/munamii-react/static/media/munamii.44ddf12f1e8d4989f58d.png",
+    "index.html": "/munamii-react/index.html",
+    "main.83269fdf.css.map": "/munamii-react/static/css/main.83269fdf.css.map",
+    "main.953636cf.js.map": "/munamii-react/static/js/main.953636cf.js.map",
+    "453.051e4fd5.chunk.js.map": "/munamii-react/static/js/453.051e4fd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4fbf074.css",
-    "static/js/main.0b5a4df8.js"
+    "static/css/main.83269fdf.css",
+    "static/js/main.953636cf.js"
   ]
 }

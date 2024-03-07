@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       {/* <AboutPage /> */}
-      <StartPage />
+      <ProductPage />
       {/* <ContactPage /> */}
-      {/* <ProductPage /> */}
+      {/* <StartPage /> */}
     </div>
   );
 }

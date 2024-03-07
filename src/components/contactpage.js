@@ -1,11 +1,10 @@
 import React from 'react'
-import MENU from './menu.js'
-import './contactpage.css'
+import "./contactpage.css"
 import Footer from './footer.js';
 export default function contactpags() {
   return (
     <div>
-        <MENU />
+        
         <div className='contact'>
           <h1>Contact us</h1>
           <p >

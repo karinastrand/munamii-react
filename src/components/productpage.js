@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from './menu.js';
+
 import Data from "./data.json";
 import Productcard from './productcard.js';
 import './productpage.css';
@@ -49,7 +49,7 @@ export default function productpage() {
   }
   return (
     <div>
-        <Menu />
+        
         <h1>Products</h1>
         
         <div  className="cakes">
@@ -73,6 +73,9 @@ export default function productpage() {
             {Data.map(allWeddingCakes)}
           </div>
         </div>
+        <br/><br/>
+        
+        
         <Footer />
     </div>
   )

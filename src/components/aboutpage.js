@@ -1,11 +1,11 @@
 import React from 'react'
 import './aboutpage.css'
-import MENU from './menu.js'
+
 import Footer from './footer.js';
 export default function aboutpage() {
   return (
     <div>
-        <MENU />
+       
         <div className='about'>
         <h1>About us</h1>
             <p>

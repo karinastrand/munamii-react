@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/munamii-react/static/css/main.83269fdf.css",
-    "main.js": "/munamii-react/static/js/main.953636cf.js",
+    "main.css": "/munamii-react/static/css/main.589e310e.css",
+    "main.js": "/munamii-react/static/js/main.61eccf5c.js",
     "static/js/453.051e4fd5.chunk.js": "/munamii-react/static/js/453.051e4fd5.chunk.js",
     "static/media/StartCake.png": "/munamii-react/static/media/StartCake.b423fe948bfc9f909284.png",
     "static/media/CupCakes13c.jpg": "/munamii-react/static/media/CupCakes13c.0901ed0cfc70e8f54cc4.jpg",
     "static/media/munamii.png": "/munamii-react/static/media/munamii.44ddf12f1e8d4989f58d.png",
     "index.html": "/munamii-react/index.html",
-    "main.83269fdf.css.map": "/munamii-react/static/css/main.83269fdf.css.map",
-    "main.953636cf.js.map": "/munamii-react/static/js/main.953636cf.js.map",
+    "main.589e310e.css.map": "/munamii-react/static/css/main.589e310e.css.map",
+    "main.61eccf5c.js.map": "/munamii-react/static/js/main.61eccf5c.js.map",
     "453.051e4fd5.chunk.js.map": "/munamii-react/static/js/453.051e4fd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83269fdf.css",
-    "static/js/main.953636cf.js"
+    "static/css/main.589e310e.css",
+    "static/js/main.61eccf5c.js"
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout.js';
 import Data from "../components/Data.json";
-import Productcard from "../components/Productcard.js"
+import Productcard from "../components/Productcard.js";
 import './Productpage.css';
 import Footer from '../components/Footer.js';
 

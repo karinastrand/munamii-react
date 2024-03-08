@@ -1,5 +1,5 @@
 import React from 'react'
-import './info.css'
+import './Info.css'
 import Img from './Images/munamii.png';
 export default function info() 
 {

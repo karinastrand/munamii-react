@@ -1,14 +1,17 @@
 import React from 'react';
+import Layout from '../components/Layout.js';
+import Data from "../components/Data.json";
+import Productcard from "../components/Productcard.js"
+import './Productpage.css';
+import Footer from '../components/Footer.js';
 
-import Data from "./data.json";
-import Productcard from './productcard.js';
-import './productpage.css';
-import Footer from './footer.js';
-export default function productpage() {
+const Productpage= () =>
+{ 
   const allCupCakes=(values)=>{
     if(values.type==="Cupcake")
     return(
-      <div className='cake'>
+
+      <div className='cake' key={values.id}>
         <Productcard
         src={values.src}
         name={values.name}
@@ -20,9 +23,9 @@ export default function productpage() {
     );
   }
   const allBirthdayCakes=(values)=>{
-    if(values.type==="Birthdaycake")
+    if(values.type==="Birthdaycake" )
     return(
-      <div className='cake'>
+      <div className='cake' key={values.id}>
         <Productcard
         src={values.src}
         name={values.name}
@@ -36,7 +39,7 @@ export default function productpage() {
   const allWeddingCakes=(values)=>{
     if(values.type==="Weddingcake")
     return(
-      <div className='cake'>
+      <div className='cake' key={values.id}>
         <Productcard
         src={values.src}
         name={values.name}
@@ -49,7 +52,7 @@ export default function productpage() {
   }
   return (
     <div>
-        
+        <Layout />
         <h1>Products</h1>
         
         <div  className="cakes">
@@ -80,3 +83,4 @@ export default function productpage() {
     </div>
   )
 }
+export default Productpage;

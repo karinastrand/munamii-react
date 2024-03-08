@@ -1,8 +1,6 @@
 .footer
 { 
-    display:flex;
     background-color: rgba(230,230,250,0.9);
-    
     height: 50px;
     position: fixed;
     bottom: 0;
@@ -10,9 +8,11 @@
 }
 .footer >ul
 {
+    display: flex;
     justify-content: center;
     vertical-align: center;
     width: 100%;
+    list-style-type: none;
 }
 .footer > ul>li
 {

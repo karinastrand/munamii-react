@@ -1,7 +1,7 @@
 import React from 'react'
-import "./productcard.css"
-export default function productcard(data) {
-  const {id, type, name, price,src}=data;
+import "./Productcard.css"
+export default function Productcard(Data) {
+  const {id, type, name, price,src}=Data;
   return (
     <div className='data'>
         <input type="hidden" id={id} />
@@ -12,13 +12,13 @@ export default function productcard(data) {
         className='imgstyle'
         />
         <br/>
-        <item className='name' >
+        <div className='name' >
           {name}
-        </item>
+        </div>
         <br/>
-        <item className='price' >
+        <div className='price' >
           {price}
-        </item>
+        </div>
         <br/>
         <button>Buy</button>
 

@@ -1,10 +1,11 @@
 import React from 'react'
-import "./contactpage.css"
-import Footer from './footer.js';
-export default function contactpags() {
+import "./Contactpage.css"
+import Layout from '../components/Layout.js'
+import Footer from '../components/Footer.js';
+export default function Contactpags() {
   return (
     <div>
-        
+        <Layout />
         <div className='contact'>
           <h1>Contact us</h1>
           <p >

@@ -1,8 +1,8 @@
 import React from 'react'
-import './menu.css'
+import './Menu.css'
 import { Outlet, Link } from 'react-router-dom';
 
-const menu=()=> {
+const Menu=()=> {
   return (
         <>
         <nav>
@@ -25,5 +25,5 @@ const menu=()=> {
     </>
   )
 };
-export default menu;
+export default Menu;
 

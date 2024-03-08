@@ -1,33 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route} from "react-router-dom"
+import Layout from './components/Layout'
 import './index.css';
-
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Menu from "./components/menu.js";
-import Home from "./components/startpage.js";
-import About from "./components/aboutpage.js";
-import Contact from "./components/contactpage.js";
-import Products from "./components/productpage.js";
-import NoPage from "./components/nopage.js";
+import About from './pages/Aboutpage'
+import Contact from './pages/Contactpage'
+import Products from './pages/Productpage'
+import Home from './pages/Home'
 
-
-export default function App()
-{
-  return(
+export default function App() {
+  return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Menu />}>
-          <Route index element={<Home/>}/>
-          <Route path="products" element={<Products/>}/>
-          <Route path="about"element={<About/>}/>
-          <Route path="contact" element={<Contact/>}/>
-          <Route path="*" element={<NoPage/>}/>
-        </Route>
+        <Route path="/" element={<Layout />} />
+        <Route index element={<Home />} />
+        <Route path="products" element={<Products />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
-  );
+
+  )
 }
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

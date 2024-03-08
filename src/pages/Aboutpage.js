@@ -1,11 +1,11 @@
 import React from 'react'
-import './aboutpage.css'
-
-import Footer from './footer.js';
-export default function aboutpage() {
+import './Aboutpage.css'
+import Layout from '../components/Layout.js'
+import Footer from '../components/Footer.js';
+export default function Aboutpage() {
   return (
     <div>
-       
+       <Layout />
         <div className='about'>
         <h1>About us</h1>
             <p>

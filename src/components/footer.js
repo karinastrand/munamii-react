@@ -1,6 +1,6 @@
 import React from 'react'
-import './footer.css'
-export default function footer() {
+import './Footer.css'
+export default function Footer() {
   return (
     <div className='footer'>
         <ul>
@@ -21,9 +21,6 @@ export default function footer() {
                 </a>
             </li>
         </ul>
-        
-        
-        
     </div>
   )
 }

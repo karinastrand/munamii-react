@@ -4,13 +4,15 @@ body
     background-image: url('../Images/CupCakes13c.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 20px;
- 
+   
 }
 .rightSide>img
 {
-    max-width: 50%;
+    max-width: 60%;
     align-items: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 .startpage
 {

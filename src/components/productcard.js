@@ -1,5 +1,7 @@
 import React from 'react'
+import { useState } from 'react';
 import "./Productcard.css"
+import ModalAlert from './ModalAlert';
 import Img1 from '../Images/CupCake1.png';
 import Img2 from '../Images/CupCake2.png';
 import Img3 from '../Images/CupCake3.png';
@@ -36,7 +38,8 @@ import Img33 from '../Images/WeddingCake8.png';
 import Img34 from '../Images/WeddingCake9.png';
 import Img35 from '../Images/WeddingCake10.png';
 
-export default function Productcard(Data) {
+export default function Productcard(Data) { 
+  const [show, setShow]=useState(false);
   const {id, type, name, price}=Data;
   const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
     Img11,Img12,Img13,Img14,Img15,Img16,Img17,Img18,Img19,Img20,Img21,
@@ -45,8 +48,23 @@ export default function Productcard(Data) {
   let src=imgarray[id-1];
   
   
+  const handleConfirm=()=>
+  {
+
+  };
+
   
   return (
+    <div>
+        <ModalAlert 
+          show={show}
+          handleClose={()=> setShow(false)}
+          onConfirm={handleConfirm}
+          title={"Confirm buy"}
+          message={"Put to the Cart"}
+          buttonLabel={"Confirm"}
+        />
+    
     <div className='data'>
         <input type="hidden" id={id} />
         <input type="hidden" id={type} />
@@ -64,8 +82,9 @@ export default function Productcard(Data) {
           {price}
         </div>
         <br/>
-        <button>Buy</button>
-
+        
+        <button onClick={()=>setShow(true)}>Buy</button>
+        </div>
     </div>
   )
 }

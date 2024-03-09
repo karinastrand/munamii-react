@@ -53,32 +53,33 @@ const Productpage= () =>
   return (
     <div>
         <Layout />
-        <h1>Products</h1>
-        
-        <div  className="cakes">
-        <h2>CupCakes</h2>
-        <div className="cakedisplay">
-          {Data.map(allCupCakes)}
-        </div>
+        <div className='products'>
+          <h1>Products</h1>
           
-        </div>
-        
-        <div className='cakes'>
-        <h2>BirthdayCakes</h2>
-          <div className="cakedisplay">
-            {Data.map(allBirthdayCakes)}
+          <div  className="cakes">
+            <h2>CupCakes</h2>
+            <div className="cakedisplay">
+              {Data.map(allCupCakes)}
+            </div>
+            
           </div>
-        </div>
-        
-        <div className='cakes'>
-        <h2>WeddingCakes</h2>
-          <div className="cakedisplay">
-            {Data.map(allWeddingCakes)}
-          </div>
-        </div>
-        <br/><br/>
-        
-        
+          
+            <div className='cakes'>
+            <h2>BirthdayCakes</h2>
+            <div className="cakedisplay">
+              {Data.map(allBirthdayCakes)}
+            </div>
+            </div>
+          
+            <div className='cakes'>
+            <h2>WeddingCakes</h2>
+            <div className="cakedisplay">
+              {Data.map(allWeddingCakes)}
+            </div>
+            </div>
+            <br/><br/>
+          
+          </div> 
         <Footer />
     </div>
   )

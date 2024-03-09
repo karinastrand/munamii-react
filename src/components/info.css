@@ -1,8 +1,27 @@
 .info
 {
     text-align: center;
+    
 }
 .info >img
 {
   max-width: 30%;
+}
+
+.infotext
+{
+  background-color: rgba(230,230,250,0.6);
+  border-radius: 5%;
+  padding: 10px;
+  margin: 20px;
+}
+.buttonlink
+{
+  border-radius: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: lavender;
+  border-color: rgb(210, 210, 219);
 }

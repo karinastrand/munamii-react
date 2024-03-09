@@ -1,6 +1,6 @@
 import React from 'react'
 import './Info.css'
-import Img from './Images/munamii.png';
+import Img from '../Images/munamii.png';
 export default function info() 
 {
   return (

@@ -1,5 +1,5 @@
   
-  import img from '../components/Images/StartCake.png';
+  import img from '../Images/StartCake.png';
   import Info from '../components/Info.js';
   import Footer from '../components/Footer.js';
   import Navbar from '../components/Layout.js';

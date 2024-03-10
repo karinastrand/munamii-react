@@ -2,8 +2,7 @@
 { 
     background-color: rgba(230,230,250,0.9);
     height: 50px;
-    position: fixed;
-    bottom: 0;
+    
     width: 100%;
 }
 .footer >ul

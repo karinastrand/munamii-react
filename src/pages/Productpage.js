@@ -18,6 +18,7 @@ const Productpage= () =>
         price={values.price}
         id={values.id}
         type={values.type}
+        description={values.description}
         />
       </div>
     );
@@ -32,6 +33,7 @@ const Productpage= () =>
         price={values.price}
         id={values.id}
         type={values.type}
+        description={values.description}
         />
       </div>
     );
@@ -46,6 +48,7 @@ const Productpage= () =>
         price={values.price}
         id={values.id}
         type={values.type}
+        description={values.description}
         />
       </div>
     );

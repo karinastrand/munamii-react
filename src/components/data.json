@@ -3,240 +3,275 @@
         "id":1,
         "type":"Cupcake",
         "name":"CupCake 1",
-        "price":"$ 3.00",
-        "src":"Images2/CupCake1.png"
+        "price":3.00,
+        "src":"Images2/CupCake1.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of the world's best cocoa and vanilla and topped with our legendary cream cheese icing."
         
     },
     {
         "id":2,
         "type":"Cupcake",
         "name":"CupCake 2",
-        "price":"$ 5.00",
-        "src":"Images2/CupCake2.png"
+        "price":5.00,
+        "src":"Images2/CupCake2.png",
+        "description":"Our fluffy Madagascan vanilla seed sponge baked with rainbow Funfetti sprinkles and topped with our silky smooth, less sweet Swiss meringue buttercream."
     },
     {
         "id":3,
         "type":"Cupcake",
         "name":"CupCake 3",
-        "price":"$ 7.00",
-        "src":"Images2/CupCake3.png"
+        "price":7.00,
+        "src":"Images2/CupCake3.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of strawberry and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":4,
         "type":"Cupcake",
         "name":"CupCake 4",
-        "price":"$ 8.00",
-        "src":"Images2/CupCake4.png"
+        "price":8.00,
+        "src":"Images2/CupCake4.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of the world's best cocoa and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":5,
         "type":"Cupcake",
         "name":"CupCake 5",
-        "price":"$ 5.00",
-        "src":"Images2/CupCake5.png"
+        "price":5.00,
+        "src":"Images2/CupCake5.png",
+        "description":"Our fluffy Madagascan vanilla seed sponge baked with rainbow Funfetti sprinkles and topped with our silky smooth, less sweet Swiss meringue buttercream."
+        
     },
     {
         "id":6,
         "type":"Cupcake",
         "name": "CupCake 6,",
-        "price":"$ 3.00",
-        "src":"Images2/CupCake6.png"
+        "price":3.00,
+        "src":"Images2/CupCake6.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of strawberry and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":7,
         "type":"Cupcake",
         "name":"CupCake 7",
-        "price":"$ 7.00",
-        "src":"Images2/CupCake7.png"
+        "price":7.00,
+        "src":"Images2/CupCake7.png",
+        "description":"Four fluffy moist layers of our Oreo-encrusted sponge with just a hint of chocolate."
     },
     {
         "id":8,
         "type":"Cupcake",
         "name":"CupCake 8",
-        "price":"$ 4.00",
-        "src":"Images2/CupCake8.png"
+        "price":4.00,
+        "src":"Images2/CupCake8.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of the world's best cocoa and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":9,
         "type":"Cupcake",
         "name":"CupCake 9",
-        "price":"$ 6.00",
-        "src":"Images2/CupCake9.png"
+        "price":6.00,
+        "src":"Images2/CupCake9.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of the world's best cocoa and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":10,
         "type":"Cupcake",
         "name":"CupCake 10",
-        "price":"$ 9.00",
-        "src":"Images2/CupCake10.png"
+        "price":9.00,
+        "src":"Images2/CupCake10.png",
+        "description":"One of our most popular flavours amongst all ages. Our light and fluffy vanilla sponge with a creamy vanilla buttercream that comes in beautiful pastel colours; pink, lilac, green and yellow."
     },
     {
         "id":11,
         "type":"Cupcake",
         "name":"CupCake 11",
-        "price":"$ 8.00",
-        "src":"Images2/CupCake11.png"
+        "price":8.00,
+        "src":"Images2/CupCake11.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of the world's best cocoa and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":12,
         "type":"Cupcake",
         "name":"CupCake 12",
-        "price":"$ 5.00",
-        "src":"Images2/CupCake12.png"
+        "price":5.00,
+        "src":"Images2/CupCake12.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of strawberry and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":13,
         "type":"Cupcake",
         "name":"CupCake 13",
-        "price":"$ 4.00",
-        "src":"Images2/CupCake13.png"
+        "price":4.00,
+        "src":"Images2/CupCake13.png",
+        "description":"A moist, fluffy red buttermilk sponge baked with just a hint of the world's best cocoa and vanilla and topped with our legendary cream cheese icing."
     },
     {
         "id":14,
         "type":"Cupcake",
         "name":"CupCake 14",
-        "price":"$ 7.00",
-        "src":"Images2/CupCake14.png"
+        "price":7.00,
+        "src":"Images2/CupCake14.png",
+        "description":"One of our most popular flavours amongst all ages. Our light and fluffy vanilla sponge with a creamy vanilla buttercream that comes in beautiful pastel colours; pink, lilac, green and yellow."
     },
     {
         "id":15,
         "type":"Cupcake",
         "name":"CupCake 15",
-        "price":"$ 6.00",
-        "src":"Images2/CupCake15.png"
+        "price":6.00,
+        "src":"Images2/CupCake15.png",
+        "description":"One of our most popular flavours amongst all ages. Our light and fluffy vanilla sponge with a creamy vanilla buttercream that comes in beautiful pastel colours; pink, lilac, green and yellow."
     },
     {
         "id":16,
         "type":"Birthdaycake",
         "name":"BirthdayCake 1",
-        "price":"$ 12.00",
-        "src":"Images2/BirthdayCake1.png"
+        "price":12.00,
+        "src":"Images2/BirthdayCake1.png",
+        "description":"This 3-layered cake reminds us of childhood and tastes exactly like Strawberry milk! The light and fluffy milk sponge is sandwiched with strawberry milk flavoured buttercream."
     },
     {
         "id":17,
         "type":"Birthdaycake",
         "name":"BirthdayCake 2",
-        "price":"$ 18.00",
-        "src":"Images2/BirthdayCake2.png"
+        "price":18.00,
+        "src":"Images2/BirthdayCake2.png",
+        "description":"This fresh summer cake is made using fresh strawberries and topped with pink vanilla buttercream icing. We finish this off with fresh strawberries to decorate and a message and decorations of your choice."
     },
     {
         "id":18,
         "type":"Birthdaycake",
         "name":"BirthdayCake 3",
-        "price":"$ 17.00",
-        "src":"Images2/BirthdayCake3.png"
+        "price":17.00,
+        "src":"Images2/BirthdayCake3.png",
+        "description":"It is hard to resist this chic looking and flavourful cake with beautiful rose-garden garnish; suitable as a centrepiece for any formal setting "
     },
     {
         "id":19,
         "type":"Birthdaycake",
         "name":"BirthdayCake 4",
-        "price":"$ 14.00",
-        "src":"Images2/BirthdayCake4.png"
+        "price":14.00,
+        "src":"Images2/BirthdayCake4.png",
+        "description":"This 3-layered cake reminds us of childhood and tastes exactly like Strawberry milk! The light and fluffy milk sponge is sandwiched with strawberry milk flavoured buttercream."
     },
     {
         "id":20,
         "type":"Birthdaycake",
         "name":"BirthdayCake 5",
-        "price":"$ 20.00",
-        "src":"Images2/BirthdayCake5.png"
+        "price":20.00,
+        "src":"Images2/BirthdayCake5.png",
+        "description":"Four fluffy moist layers of our Oreo-encrusted sponge with just a hint of chocolate."
     },
     {
         "id":21,
         "type":"Birthdaycake",
         "name":"BirthdayCake 6",
-        "price":"$ 19.00",
-        "src":"Images2/BirthdayCake6.png"
+        "price":19.00,
+        "src":"Images2/BirthdayCake6.png",
+        "description":"Four fluffy moist layers of our Oreo-encrusted sponge with just a hint of chocolate."
     },
     {
         "id":22,
         "type":"Birthdaycake",
         "name":"BirthdayCake 7",
-        "price":"$ 18.00",
-        "src":"Images2/BirthdayCake7.png"
+        "price":18.00,
+        "src":"Images2/BirthdayCake7.png",
+        "description":"Six brightly coloured layers of Madagascan vanilla buttermilk sponge! Perfectly balanced sweetness with the kind of crumb that makes you weak at the knees."
     },
     {
         "id":23,
         "type":"Birthdaycake",
         "name":"BirthdayCake 8",
-        "price":"$ 15.00",
-        "src":"/Images2/BirthdayCake8.png"
+        "price":15.00,
+        "src":"/Images2/BirthdayCake8.png",
+        "description":"This fresh summer cake is made using fresh strawberries and topped with pink vanilla buttercream icing. We finish this off with fresh strawberries to decorate and a message and decorations of your choice."
     },
     {
         "id":24,
         "type":"Birthdaycake",
         "name":"BirthdayCake 9",
-        "price":"$ 21.00",
-        "src":"Images2/BirthdayCake9.png"
+        "price":21.00,
+        "src":"Images2/BirthdayCake9.png",
+        "description":"Six brightly coloured layers of Madagascan vanilla buttermilk sponge! Perfectly balanced sweetness with the kind of crumb that makes you weak at the knees."
+
     },
 
     {
         "id":25,
         "type":"Birthdaycake",
         "name":"BirthdayCake 10",
-        "price":"$ 25.00",
-        "src":"Images2/BirthdayCake10.png"
+        "price":25.00,
+        "src":"Images2/BirthdayCake10.png",
+        "description":"This fresh summer cake is made using fresh strawberries and topped with pink vanilla buttercream icing. We finish this off with fresh strawberries to decorate and a message and decorations of your choice."
     },
     {
         "id":26,
         "type":"Weddingcake",
         "name":"WeddingCake 1",
-        "price":"$ 42.00",
-        "src":"Images2/WeddingCake1.png"
+        "price":42.00,
+        "src":"Images2/WeddingCake1.png",
+        "description":"The harmony of nuptial white, sparkling gold leaves, and delicate flowers create an aesthetic of unmatched elegance. Each detail is carefully thought to evoke the richness of gold and floral delicacy."
     },
     {
         "id":27,
         "type":"Weddingcake",
         "name":"WeddingCake 2",
-        "price":"$ 58.00",
-        "src":"Images2/WeddingCake2.png"
+        "price":58.00,
+        "src":"Images2/WeddingCake2.png",
+        "description":"Each bite reveals the exceptional quality of our ingredients. From soft cake to gold leaf details, each component is a refinement declaration for your wedding cake "
     },
     {
         "id":28,
         "type":"Weddingcake",
         "name":"WeddingCake 3",
-        "price":"$ 47.00",
-        "src":"Images2/WeddingCake3.png"
+        "price":47.00,
+        "src":"Images2/WeddingCake3.png",
+        "description":"Each bite reveals the exceptional quality of our ingredients. From soft cake to gold leaf details, each component is a refinement declaration for your wedding cake "
     },
     {
         "id":29,
         "type":"Weddingcake",
         "name":"WeddingCake 4",
-        "price":"$ 34.00",
-        "src":"Images2/WeddingCake4.png"
+        "price":34.00,
+        "src":"Images2/WeddingCake4.png",
+        "description":"The harmony of nuptial white, sparkling gold leaves, and delicate flowers create an aesthetic of unmatched elegance. Each detail is carefully thought to evoke the richness of gold and floral delicacy."
     },
     {
         "id":30,
         "type":"Weddingcake",
         "name":"WeddingCake 5",
-        "price":"$ 40.00",
-        "src":"Images2/WeddingCake5.png"
+        "price":40.00,
+        "src":"Images2/WeddingCake5.png",
+        "description":"Our wedding cake wedding cake gold leaves and flowers is available in different sizes to adapt to all celebrations, from the most intimate to the largest, adding a prestigious touch to your special day."
     },
     {
         "id":31,
         "type":"Weddingcake",
         "name":"WeddingCake 6",
-        "price":"$ 59.00",
-        "src":"Images2/WeddingCake6.png"
+        "price":59.00,
+        "src":"Images2/WeddingCake6.png",
+        "description":"Our wedding cake wedding cake gold leaves and flowers is available in different sizes to adapt to all celebrations, from the most intimate to the largest, adding a prestigious touch to your special day."
     },
     {
         "id":32,
         "type":"Weddingcake",
         "name":"WeddingCake 7",
-        "price":"$ 48.00",
-        "src":"Images2/WeddingCake7.png"
+        "price":48.00,
+        "src":"Images2/WeddingCake7.png",
+        "description":"Six brightly coloured layers of Madagascan vanilla buttermilk sponge! Perfectly balanced sweetness with the kind of crumb that makes you weak at the knees."
     },
     {
         "id":33,
         "type":"Weddingcake",
         "name":"WeddingCake 8",
-        "price":"$ 45.00",
-        "src":"Images2/WeddingCake8.png"
+        "price":45.00,
+        "src":"Images2/WeddingCake8.png",
+        "description":"Six brightly coloured layers of Madagascan vanilla buttermilk sponge! Perfectly balanced sweetness with the kind of crumb that makes you weak at the knees."
     },
     {
         "id":34,
         "type":"Weddingcake",
         "name":"WeddingCake 9",
-        "price":"$ 41.00",
+        "price":41.00,
         "src":"Images2/WeddingCake9.png"
     },
 
@@ -244,7 +279,7 @@
         "id":35,
         "type":"Weddingcake",
         "name":"WeddingCake 10",
-        "price":"$ 32.00",
+        "price":32.00,
         "src": "Images2/WeddingCake10.png"
     }
 

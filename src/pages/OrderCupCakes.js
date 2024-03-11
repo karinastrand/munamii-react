@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Footer from "../components/Footer"
 import { useState } from 'react';
-import "./OrderCupCakes.css"
+import "./OrderCake.css"
 import { useLocation } from "react-router-dom";   
 import Img1 from '../Images/CupCake1.png';
 import Img2 from '../Images/CupCake2.png';
@@ -26,7 +26,8 @@ export default function OrderCupCakes(props) {
     const [Counter,setCounter]=useState(1)
   const location=useLocation();
   const data =location.state;
-  const {id,type,name,price}=data;
+  
+  const {id,type,name,price,description}=data;
   const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
     Img11,Img12,Img13,Img14,Img15]
   let src=imgarray[id-1];
@@ -37,20 +38,21 @@ export default function OrderCupCakes(props) {
   }
   function onValueChange2(event)
   {
-    setSelectedOption(event.target.value)
+    setSelectedOption2(event.target.value)
   }
     return(
         <div>
         <Layout />
         <div className='order'>
-          <div >
+          <div className="infoaboutcake">
             <img 
               src={src}
               alt="cake"
-              style={{padding:20, maxWidth:750} }
+             
             >
             </img>
             <h3>Description</h3>
+            {description}
           </div>
           <div>
             <h2>{name}</h2>
@@ -117,15 +119,13 @@ export default function OrderCupCakes(props) {
                 onChange={onValueChange} />
               red satin</label><br/>
             <br/>
-            <br/>
-            <label style={{fontWeight: 'bold'}}>Message</label>
-            <textarea>Message to us</textarea><br/>
             
+            <label style={{fontWeight: 'bold'}}>Message<br/>
+            <textarea rows={8} cols={40}></textarea><br/></label>
+            <br/>
             <button onClick={()=>Counter>1?setCounter(Counter-1):setCounter(1)}>-</button>
             <input className='inputbutton' value={Counter}  ></input>
-             
- 
-            <button onClick={()=>setCounter(Counter+1)}>+</button><br/>
+            <button onClick={()=>setCounter(Counter+1)}>+</button><br/><br/>
             <button>Add to cart</button>
           </div>
           

@@ -39,7 +39,7 @@ import Img35 from '../Images/WeddingCake10.png';
 
 export default function Productcard(Data) { 
   
-  const {id, type, name, price}=Data;
+  const {id, type, name, price,description}=Data;
   const dataToPass={name: "cake1", id:2 };
 
   const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
@@ -51,15 +51,6 @@ export default function Productcard(Data) {
   
  
   return (
-    
-        /*{ <ModalAlert 
-          show={show}
-          handleClose={()=> setShow(false)}
-          onConfirm={handleConfirm}
-          title={"Confirm buy"}
-          message={"Put to the Cart"}
-          buttonLabel={"Confirm"}
-        /> }*/
     
     <div className='data'>
         <input type="hidden" id={id} />

@@ -1,8 +1,9 @@
 import Layout from "../components/Layout";
 import Footer from "../components/Footer"
-import { useState } from 'react';
+import React,{useEffect, useState,useRef,useLayoutEffect} from 'react';
 import "./OrderCake.css"
-import { useLocation } from "react-router-dom";   
+import { Link, useLocation } from "react-router-dom"
+import CartItem from '../components/CartItem'; 
 import Img1 from '../Images/CupCake1.png';
 import Img2 from '../Images/CupCake2.png';
 import Img3 from '../Images/CupCake3.png';
@@ -21,17 +22,21 @@ import Img15 from '../Images/CupCake15.png';
 
 
 export default function OrderCupCakes(props) {
+  const [Counter,setCounter]=useState(1)
   const[selectedOption,setSelectedOption]=useState("vanilla");
-  const[selectedOption2,setSelectedOption2]=useState("10"); 
-    const [Counter,setCounter]=useState(1)
+  const[selectedOption2,setSelectedOption2]=useState("10");
+  const[isButtonDisabled,setButtonDisabled]=useState(true);
   const location=useLocation();
+  const [Cart,setCart]=useState([{cartid:0}])
+  const firstUpdate=useRef(true);
   const data =location.state;
-  
   const {id,type,name,price,description}=data;
+  const formatedNumber=price.toFixed(2);
+ 
   const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
     Img11,Img12,Img13,Img14,Img15]
   let src=imgarray[id-1];
- 
+  let portionprice=price
   function onValueChange(event)
   {
     setSelectedOption(event.target.value)
@@ -40,7 +45,78 @@ export default function OrderCupCakes(props) {
   {
     setSelectedOption2(event.target.value)
   }
-    return(
+  useLayoutEffect(()=>
+    {
+      if(firstUpdate.current)
+      {
+        
+        let copyCart=JSON.parse(localStorage.getItem("Cart"))
+          if(copyCart)
+          {
+          setCart(copyCart);
+          
+          console.log(Cart)
+          }
+          else
+          {
+            copyCart=({cartid:0,cartName:"empty"})
+            setCart(copyCart)
+            
+            console.log(Cart)
+          }
+        
+        firstUpdate.current=false;
+        return;
+      }
+     })
+     function handleClick()
+     {
+       setButtonDisabled(true)
+       if(Cart.cartid===0)
+       {setCart([{cartid:1,cakename:name,price:formatedNumber,size:selectedOption2,sizestring:"Boxsize: ",filling:selectedOption,number:Counter,sum:(+selectedOption2*price*Counter)}]);}
+       else
+       {
+        console.log(+selectedOption2)
+         let nextid=Cart.length+1;
+         setCart([...Cart,{cartid:nextid,cakename:name,price:formatedNumber,size:selectedOption2,sizestring:"Box size: ",filling:selectedOption,number:Counter,sum:(+selectedOption2*price*Counter)}]);
+       }
+       
+       
+     }
+     useEffect(()=>
+     {
+     
+       localStorage.setItem("Cart",JSON.stringify(Cart));
+       console.log(Cart)
+       if(Cart.cartid===0)
+       setButtonDisabled(true);
+       else
+       setButtonDisabled(false)
+     },[Cart]);
+       
+       
+     const allItems=(value)=>
+     {
+       if (value.cartid>0)
+       return(
+         <div  key={value.cartid}>
+           <CartItem
+           cartid={value.cartid}
+           cakename={value.cakename}
+           price={value.price}
+           sizestring={value.sizestring}
+           size={value.size}
+           filling={value.filling}
+           number={value.number}
+           sum={value.sum}
+           />
+          
+         </div>
+       );
+     }
+     
+     return (
+     
         <div>
         <Layout />
         <div className='order'>
@@ -56,7 +132,7 @@ export default function OrderCupCakes(props) {
           </div>
           <div>
             <h2>{name}</h2>
-            <h3>{price}</h3>
+            <h3>${formatedNumber}</h3>
             <h4> Choose box size</h4>
             <label>
               <input 
@@ -120,13 +196,19 @@ export default function OrderCupCakes(props) {
               red satin</label><br/>
             <br/>
             
-            <label style={{fontWeight: 'bold'}}>Message<br/>
+            <label style={{fontWeight:'bold'}}>Message<br/>
             <textarea rows={8} cols={40}></textarea><br/></label>
             <br/>
-            <button onClick={()=>Counter>1?setCounter(Counter-1):setCounter(1)}>-</button>
-            <input className='inputbutton' value={Counter}  ></input>
+            <button onClick={()=>Counter===1?setCounter(1):setCounter(Counter-1)}>-</button>
+            
+            <input className='inputbutton' readOnly value={Counter} ></input>
+             
+ 
             <button onClick={()=>setCounter(Counter+1)}>+</button><br/><br/>
-            <button>Add to cart</button>
+            <button onClick={handleClick}> Add to cart</button>
+            <Link to="/showcart" >
+              <button disabled={isButtonDisabled}>ShowCart</button>
+            </Link>
           </div>
           
     </div>

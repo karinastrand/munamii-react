@@ -1,9 +1,8 @@
-import React,{useEffect, useState} from 'react';
+import React,{useEffect, useState ,useRef ,useLayoutEffect} from 'react';
 import Layout from '../components/Layout';
 import Footer from '../components/Footer';
-import { useLocation } from "react-router-dom";
-import './OrderCake.css'
-import Cart from '../components/Cart'
+import { Link, useLocation } from "react-router-dom";
+import './OrderCake.css';
 import CartItem from '../components/CartItem';
 import Img16 from '../Images/BirthdayCake1.png';
 import Img17 from '../Images/BirthdayCake2.png';
@@ -25,17 +24,17 @@ import Img32 from '../Images/WeddingCake7.png';
 import Img33 from '../Images/WeddingCake8.png';
 import Img34 from '../Images/WeddingCake9.png';
 import Img35 from '../Images/WeddingCake10.png';
+
 export default function OrderCake() {
   const [Counter,setCounter]=useState(1)
   const[selectedOption,setSelectedOption]=useState("vanilla");
   const[selectedOption2,setSelectedOption2]=useState("10");
-  const [OrderSum,setOrderSum]=useState(0);
+  const[isButtonDisabled,setButtonDisabled]=useState(true);
   const location=useLocation();
-  const [Cart,setCart]=useState([])
-  const[updatecart,setupdatecart]=useState(false)
-  const[newid,setNewId]=useState(Cart.length)
-// const[shoppingcart,setShoppingCart]=useState([])
+  const [Cart,setCart]=useState([{cartid:0}])
+  const firstUpdate=useRef(true);
   const data =location.state;
+
   const {id,type,name,price,description}=data;
   const formatedNumber=price.toFixed(2);
   
@@ -45,7 +44,30 @@ export default function OrderCake() {
     let src=imgarray[id-16];
     let portionprice=price
     
-   
+    useLayoutEffect(()=>
+    {
+      if(firstUpdate.current)
+      {
+        
+        let copyCart=JSON.parse(localStorage.getItem("Cart"))
+          if(copyCart)
+          {
+          setCart(copyCart);
+          
+          console.log(Cart)
+          }
+          else
+          {
+            copyCart=({cartid:0,cartName:"empty"})
+            setCart(copyCart)
+            
+            console.log(Cart)
+          }
+        
+        firstUpdate.current=false;
+        return;
+      }
+     })
     function onValueChange(event)
     {
       setSelectedOption(event.target.value)
@@ -72,20 +94,32 @@ export default function OrderCake() {
           portionprice=price;
           break;
       }
-      setOrderSum(portionprice*Counter)
-      setupdatecart(true);
+      
+      
+      setButtonDisabled(true)
+      if(Cart.cartid===0)
+      {setCart([{cartid:1,cakename:name,price:price,size:selectedOption2,sizestring:"Portions: ",filling:selectedOption,number:Counter,sum:(portionprice*Counter)}]);}
+      else
+      {
+       
+        let nextid=Cart.length+1;
+        setCart([...Cart,{cartid:nextid,cakename:name,price:portionprice,size:selectedOption2,sizestring:"Portions: ",filling:selectedOption,number:Counter,sum:(portionprice*Counter)}]);
+      }
+      
       
     }
-      useEffect(()=>{
-       
-       let copyCart=[...Cart];
-       
-       setCart([copyCart,{cartid:newid,cakename:name,size:selectedOption2,sum:OrderSum}])
-       console.log(Cart)
-       setupdatecart(false);
-       setNewId(newid+1);
-      },[updatecart])
-
+    useEffect(()=>
+    {
+    
+      localStorage.setItem("Cart",JSON.stringify(Cart));
+      console.log(Cart)
+      if(Cart.cartid===0)
+      setButtonDisabled(true);
+      else
+      setButtonDisabled(false)
+    },[Cart]);
+      
+      
     const allItems=(value)=>
     {
       if (value.cartid>0)
@@ -95,8 +129,10 @@ export default function OrderCake() {
           <CartItem
           cartid={value.cartid}
           cakename={value.cakename}
+          price={value.price}
           sizestring={value.sizestring}
           size={value.size}
+          filling={value.filling}
           number={value.number}
           sum={value.sum}
           />
@@ -198,10 +234,10 @@ export default function OrderCake() {
              
  
             <button onClick={()=>setCounter(Counter+1)}>+</button><br/><br/>
-            <button onClick={handleClick}>
-           
-              Add to cart</button>
-              {Cart.map(allItems)}
+            <button onClick={handleClick}> Add to cart</button>
+            <Link to="/showcart" >
+              <button disabled={isButtonDisabled}>ShowCart</button>
+            </Link>
           </div>
           
     </div>

@@ -10,6 +10,7 @@ import Products from './pages/Productpage'
 import Home from './pages/Home'
 import OrderCake from './pages/OrderCake';
 import OrderCupCakes from './pages/OrderCupCakes';
+import ShowCart from './components/ShowCart';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="cake" element={<OrderCake />} />
         <Route path="cupcakes" element={<OrderCupCakes />} />
+        <Route path="showcart" element={<ShowCart />}/>
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

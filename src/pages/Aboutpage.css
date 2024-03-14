@@ -1,3 +1,4 @@
+/*layout for about and contact page */
 .about
 {
     text-align: center;
@@ -7,4 +8,5 @@
     width: 50%;
     border-radius: 5%;
     margin-top: 10%;
+    margin-bottom: 20%;
 }

@@ -1,3 +1,4 @@
+/*About page, menu, text and footer */
 import React from 'react'
 import './Aboutpage.css'
 import Menu from '../components/Menu.js'

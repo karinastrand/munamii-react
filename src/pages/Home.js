@@ -4,12 +4,13 @@
   import Footer from '../components/Footer.js';
   import Menu from '../components/Menu.js';
   import './Home.css';
+  /*base layout for home*/
   const Home = () => 
   {
     return(
       <div className>
         <Menu />
-        <div className='rightSide'>
+        <div className='start'>
             <img src={img} alt="startcake"/>
             <Info />  
         </div>

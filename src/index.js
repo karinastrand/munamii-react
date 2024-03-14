@@ -11,7 +11,7 @@ import OrderCake from './pages/OrderCake.js';
 import OrderCupCakes from './pages/OrderCupCakes.js';
 import ShowCart from './pages/ShowCart.js';
 import Menu from './components/Menu.js'
-
+/*routes for the four main pages and the three pages they link to*/
 export default function App() {
   return (
     <BrowserRouter>

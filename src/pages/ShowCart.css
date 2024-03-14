@@ -1,4 +1,38 @@
-.checkout
+/* Layout for ShowCart*/
+/* small devices, one column and center align*/
+@media (max-width:600px)
 {
-   font-size: 15px;
+   .cartpage
+   {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .checkout
+   {
+      align-items: center;
+   }
+}
+/*normal to large devices */
+@media (min-width:601px)
+{
+   .cartpage
+   {
+      display: flex;
+      flex-direction: row;
+      align-items: left;
+      margin-left: 20px;
+   }
+   .cartpage2
+   {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin-left: 100px;
+   }
+   .checkout
+   {
+      align-items: center;
+   }
+   
 }

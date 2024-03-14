@@ -1,24 +1,48 @@
+/*Layout for product page */
 .products
 {
     margin-left:20px;
 }
-.cakes
+/*small devices, everything will be displayed in one columnt and centered */
+@media (max-width: 600px)
 {
-    display: flex;
-    flex-direction: column;
+    .cakes
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .cake
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .cakedisplay
+    {
+    
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-.cake
+/*Normal to lagre devices, three cards on each row */
+@media (min-width: 601px)
 {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    max-width: 30%;
-  
+    .cakes
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .cake
+    {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        max-width: 30%;
+    } 
+    .cakedisplay
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-.cakedisplay
-{
-  
-    display: flex;
-    flex-wrap: wrap;
-}
-

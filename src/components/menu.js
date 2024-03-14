@@ -1,12 +1,13 @@
 import React from 'react';
 import {Outlet, Link} from 'react-router-dom';
 import './Menu.css';
+/*Nav bar for the four main pages*/
 const Menu= () =>
 {
   return (
     <>
-        <nav >
-            <ul className='layout'>
+        <nav>
+            <ul>
                 <li>
                    <Link to="/">
                         Home

@@ -5,12 +5,11 @@ import {Link} from 'react-router-dom';
 export default function Info() 
 {
   
-  
+  /*right side of the start page, icon, infotext and a button to products*/
   return (
     <div className='info'>
       <img src={Img} alt="logo" />
-      <div className='infotext'>
-            
+      <div className='infotext'>  
             <h2>We deliver to your home!</h2>
             <p>Hi!<br/>
             Welcome to Munamii Cakery!<br/>

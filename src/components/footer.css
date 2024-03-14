@@ -1,10 +1,10 @@
+/*Layout for footer, lavendel color with a bit of opaqnes, links in the center */
 .footer
 { 
     background-color: rgba(230,230,250,0.9);
     height: 50px;
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 3px;
+   
 }
 .footer >ul
 {

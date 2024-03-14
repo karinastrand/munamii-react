@@ -1,8 +1,9 @@
+/*Contact page, menu, text and footer */
 import React from 'react'
 import "./Aboutpage.js"
 import Menu from '../components/Menu.js'
 import Footer from '../components/Footer.js';
-export default function Contactpags() {
+export default function Contactpage() {
   return (
     <div>
         <Menu />

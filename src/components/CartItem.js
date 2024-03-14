@@ -1,3 +1,4 @@
+/*displays the content of cart, the order pages send in props */
 import React, {useState} from 'react'
 
 export default function CartItem(props) {
@@ -6,9 +7,7 @@ export default function CartItem(props) {
   if (cartid>0)
   {
   return(
-    
       <div style={{fontSize:12}}>
-      
       <label style={{fontWeight:"bold", fontSize:15}}>{cakename}<br/></label>
       price: ${price}<br/>
       {sizestring} 

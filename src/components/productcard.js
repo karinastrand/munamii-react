@@ -1,6 +1,8 @@
-
+/*The main component on product page, Productcard */
 import {Link} from 'react-router-dom';
 import "./Productcard.css"
+/*Had to import all images, they disappered when i deployed this when i 
+had them on Public/Images2, will try to solve it later */
 import Img1 from '../Images/CupCake1.png';
 import Img2 from '../Images/CupCake2.png';
 import Img3 from '../Images/CupCake3.png';
@@ -36,19 +38,19 @@ import Img32 from '../Images/WeddingCake7.png';
 import Img33 from '../Images/WeddingCake8.png';
 import Img34 from '../Images/WeddingCake9.png';
 import Img35 from '../Images/WeddingCake10.png';
-
-export default function Productcard(Data) { 
-  
+export default function Productcard(Data) {  
 const {id, type, name, price,description}=Data;
 const formatedPrice=price.toFixed(2);
+/*sets the right img for the current card */
 const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
       Img11,Img12,Img13,Img14,Img15,Img16,Img17,Img18,Img19,Img20,Img21,
       Img22,Img23,Img24,Img25,Img26,Img27,Img28,Img29,Img30,
       Img31,Img32,Img33,Img34,Img35]
 let src=imgarray[id-1];
- 
+ /*creats and returns the current card with props from productpage and from the
+ start form Data.json. The images and the button is links to either 
+ OrderCupCake ("/cupcake") or OrderCake("/cake"). It uses state to sent props to the order page */
   return (
-    
     <div className='data'>
         <input type="hidden" id={id} />
         <input type="hidden" id={type} />

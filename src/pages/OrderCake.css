@@ -1,20 +1,24 @@
 .order
 {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
 .inputbutton
 {
-   
-    width:15px;
-   
+  width:15px;
 }
 .infoaboutcake
 {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    max-width: 40%;
+    max-height: auto;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 12px;
+}
+.infoaboutcake>img{
+    max-height: auto;
+    max-width: 80%;
+    border-radius: 5%;
 }

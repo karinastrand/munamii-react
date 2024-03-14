@@ -39,15 +39,13 @@ import Img35 from '../Images/WeddingCake10.png';
 
 export default function Productcard(Data) { 
   
-  const {id, type, name, price,description}=Data;
- const formatedPrice=price.toFixed(2);
-  const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
-    Img11,Img12,Img13,Img14,Img15,Img16,Img17,Img18,Img19,Img20,Img21,
-    Img22,Img23,Img24,Img25,Img26,Img27,Img28,Img29,Img30,
-    Img31,Img32,Img33,Img34,Img35]
-  let src=imgarray[id-1];
-  
-  
+const {id, type, name, price,description}=Data;
+const formatedPrice=price.toFixed(2);
+const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
+      Img11,Img12,Img13,Img14,Img15,Img16,Img17,Img18,Img19,Img20,Img21,
+      Img22,Img23,Img24,Img25,Img26,Img27,Img28,Img29,Img30,
+      Img31,Img32,Img33,Img34,Img35]
+let src=imgarray[id-1];
  
   return (
     
@@ -76,8 +74,7 @@ export default function Productcard(Data) {
         {type==="Cupcake"?"/cupcakes":"/cake"  }
         state={Data} >
           <button >Buy</button>
-        </Link>
-        
+        </Link>  
     </div>
   )
 }

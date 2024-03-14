@@ -1,5 +1,5 @@
 import React,{useEffect, useState ,useRef ,useLayoutEffect} from 'react';
-import Layout from '../components/Layout';
+import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import { Link, useLocation } from "react-router-dom";
 import './OrderCake.css';
@@ -27,9 +27,9 @@ import Img35 from '../Images/WeddingCake10.png';
 
 export default function OrderCake() {
   const [Counter,setCounter]=useState(1)
-  const[selectedOption,setSelectedOption]=useState("vanilla");
-  const[selectedOption2,setSelectedOption2]=useState("10");
-  const[isButtonDisabled,setButtonDisabled]=useState(true);
+  const [selectedOption,setSelectedOption]=useState("vanilla");
+  const [selectedOption2,setSelectedOption2]=useState("10");
+  const [isButtonDisabled,setButtonDisabled]=useState(true);
   const location=useLocation();
   const [Cart,setCart]=useState([{cartid:0}])
   const firstUpdate=useRef(true);
@@ -94,16 +94,16 @@ export default function OrderCake() {
           portionprice=price;
           break;
       }
-      
-      
+      let cakeprice=portionprice.toFixed(2);
+      console.log(typeof(cakeprice))
       setButtonDisabled(true)
       if(Cart.cartid===0)
-      {setCart([{cartid:1,cakename:name,price:price,size:selectedOption2,sizestring:"Portions: ",filling:selectedOption,number:Counter,sum:(portionprice*Counter)}]);}
+      {setCart([{cartid:1,cakename:name,price:cakeprice,size:selectedOption2,sizestring:"Portions: ",filling:selectedOption,number:Counter,sum:(portionprice*Counter)}]);}
       else
       {
        
         let nextid=Cart.length+1;
-        setCart([...Cart,{cartid:nextid,cakename:name,price:portionprice,size:selectedOption2,sizestring:"Portions: ",filling:selectedOption,number:Counter,sum:(portionprice*Counter)}]);
+        setCart([...Cart,{cartid:nextid,cakename:name,price:cakeprice,size:selectedOption2,sizestring:"Portions: ",filling:selectedOption,number:Counter,sum:(portionprice*Counter)}]);
       }
       
       
@@ -144,13 +144,14 @@ export default function OrderCake() {
     return (
     
     <div>
-      <Layout />
+      <Menu />
       <div className='order'>
           <div className='infoaboutcake'>
             
             <img 
               src={src}
               alt="cake"
+              
             >
             </img>
             <h3>Description</h3>
@@ -224,17 +225,10 @@ export default function OrderCake() {
                 onChange={onValueChange} />
               red satin</label><br/>
             <br/>
-           
-            <label style={{fontWeight:'bold'}}>Message<br/>
-            <textarea rows={8} cols={40}></textarea><br/></label>
-            <br/>
             <button onClick={()=>Counter===1?setCounter(1):setCounter(Counter-1)}>-</button>
-            
             <input className='inputbutton' readOnly value={Counter} ></input>
-             
- 
             <button onClick={()=>setCounter(Counter+1)}>+</button><br/><br/>
-            <button onClick={handleClick}> Add to cart</button>
+            <button onClick={handleClick}> Add to cart</button><br/><br/>
             <Link to="/showcart" >
               <button disabled={isButtonDisabled}>ShowCart</button>
             </Link>

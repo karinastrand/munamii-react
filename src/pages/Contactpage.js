@@ -1,12 +1,12 @@
 import React from 'react'
-import "./Contactpage.css"
-import Layout from '../components/Layout.js'
+import "./Aboutpage.js"
+import Menu from '../components/Menu.js'
 import Footer from '../components/Footer.js';
 export default function Contactpags() {
   return (
     <div>
-        <Layout />
-        <div className='contact'>
+        <Menu />
+        <div className='about'>
           <h1>Contact us</h1>
           <p >
                   Home delivery service: <br/>

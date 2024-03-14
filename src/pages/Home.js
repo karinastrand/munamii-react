@@ -2,13 +2,13 @@
   import img from '../Images/StartCake.png';
   import Info from '../components/Info.js';
   import Footer from '../components/Footer.js';
-  import Navbar from '../components/Layout.js';
+  import Menu from '../components/Menu.js';
   import './Home.css';
   const Home = () => 
   {
     return(
-      <div startpage>
-        <Navbar />
+      <div className>
+        <Menu />
         <div className='rightSide'>
             <img src={img} alt="startcake"/>
             <Info />  

@@ -1,22 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route} from "react-router-dom"
-import Layout from './components/Layout'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import About from './pages/Aboutpage'
-import Contact from './pages/Contactpage'
-import Products from './pages/Productpage'
+import About from './pages/Aboutpage.js'
+import Contact from './pages/Contactpage.js'
+import Products from './pages/Productpage.js'
 import Home from './pages/Home'
-import OrderCake from './pages/OrderCake';
-import OrderCupCakes from './pages/OrderCupCakes';
-import ShowCart from './components/ShowCart';
+import OrderCake from './pages/OrderCake.js';
+import OrderCupCakes from './pages/OrderCupCakes.js';
+import ShowCart from './pages/ShowCart.js';
+import Menu from './components/Menu.js'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />} />
+        <Route path="/" element={<Menu />} />
         <Route index element={<Home />} />
         <Route path="products" element={<Products />} />
         <Route path="contact" element={<Contact />} />

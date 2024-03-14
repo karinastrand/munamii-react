@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout.js';
+import Menu from '../components/Menu.js';
 import Data from "../components/Data.json";
 import Productcard from "../components/Productcard.js";
 import './Productpage.css';
@@ -55,7 +55,7 @@ const Productpage= () =>
   }
   return (
     <div>
-        <Layout />
+        <Menu />
         <div className='products'>
           <h1>Products</h1>
           

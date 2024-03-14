@@ -1,29 +1,36 @@
-import React from 'react'
-import './Menu.css'
-import { Outlet, Link } from 'react-router-dom';
-
-const Menu=()=> {
+import React from 'react';
+import {Outlet, Link} from 'react-router-dom';
+import './Menu.css';
+const Menu= () =>
+{
   return (
-        <>
-        <nav>
-            <ul>
+    <>
+        <nav >
+            <ul className='layout'>
                 <li>
-                    <Link to="/">Home</Link>
+                   <Link to="/">
+                        Home
+                   </Link>
                 </li>
                 <li>
-                    <Link to="/products">Products</Link>
+                   <Link to="/products">
+                        Products
+                   </Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
-                </li> 
+                   <Link to="/contact">
+                        Contact Us
+                   </Link>
+                </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
-                </li> 
+                   <Link to="/about">
+                        About Us
+                   </Link>
+                </li>
             </ul>
         </nav>
         <Outlet />
     </>
   )
-};
+}
 export default Menu;
-

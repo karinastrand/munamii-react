@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Menu from "../components/Menu";
 import Footer from "../components/Footer"
 import React,{useEffect, useState,useRef,useLayoutEffect} from 'react';
 import "./OrderCake.css"
@@ -73,7 +73,7 @@ export default function OrderCupCakes(props) {
      {
        setButtonDisabled(true)
        if(Cart.cartid===0)
-       {setCart([{cartid:1,cakename:name,price:formatedNumber,size:selectedOption2,sizestring:"Boxsize: ",filling:selectedOption,number:Counter,sum:(+selectedOption2*price*Counter)}]);}
+       {setCart([{cartid:1,cakename:name,price:formatedNumber,price,size:selectedOption2,sizestring:"Boxsize: ",filling:selectedOption,number:Counter,sum:(+selectedOption2*price*Counter)}]);}
        else
        {
         console.log(+selectedOption2)
@@ -118,7 +118,7 @@ export default function OrderCupCakes(props) {
      return (
      
         <div>
-        <Layout />
+        <Menu />
         <div className='order'>
           <div className="infoaboutcake">
             <img 
@@ -155,14 +155,14 @@ export default function OrderCupCakes(props) {
                 value="12" 
                 checked={selectedOption2==="12"}
                 onChange={onValueChange2} />
-            12 portions</label><br/>
+            12 cupcakes</label><br/>
             <label>
               <input 
                 type='radio' 
                 value="12" 
                 checked={selectedOption2==="25"}
                 onChange={onValueChange2} />
-            25 portions</label><br/>
+            25 cupcakes</label><br/>
             <h4> Choose filling</h4>
             <label>
               <input 
@@ -195,17 +195,10 @@ export default function OrderCupCakes(props) {
                 onChange={onValueChange} />
               red satin</label><br/>
             <br/>
-            
-            <label style={{fontWeight:'bold'}}>Message<br/>
-            <textarea rows={8} cols={40}></textarea><br/></label>
-            <br/>
             <button onClick={()=>Counter===1?setCounter(1):setCounter(Counter-1)}>-</button>
-            
             <input className='inputbutton' readOnly value={Counter} ></input>
-             
- 
             <button onClick={()=>setCounter(Counter+1)}>+</button><br/><br/>
-            <button onClick={handleClick}> Add to cart</button>
+            <button onClick={handleClick}> Add to cart</button><br/><br/>
             <Link to="/showcart" >
               <button disabled={isButtonDisabled}>ShowCart</button>
             </Link>

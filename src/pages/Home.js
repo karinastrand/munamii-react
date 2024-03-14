@@ -7,13 +7,13 @@
   const Home = () => 
   {
     return(
-      <div>
+      <div startpage>
         <Navbar />
         <div className='rightSide'>
             <img src={img} alt="startcake"/>
             <Info />  
         </div>
-          <Footer />
+        <Footer />
       </div>
     );
   }

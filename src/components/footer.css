@@ -2,8 +2,9 @@
 { 
     background-color: rgba(230,230,250,0.9);
     height: 50px;
-    
     width: 100%;
+    margin-top: auto;
+    margin-bottom: 3px;
 }
 .footer >ul
 {
@@ -12,10 +13,13 @@
     vertical-align: center;
     width: 100%;
     list-style-type: none;
+   
+    
 }
 .footer > ul>li
 {
     font-size: 15px;
     padding-left:2%;
     padding-right:2%;
+    margin-top: 15px;
 }

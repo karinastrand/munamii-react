@@ -5,7 +5,7 @@ import Data from "../components/Data.json";
 import Productcard from "../components/Productcard.js";
 import './Productpage.css';
 import Footer from '../components/Footer.js';
-
+import AnchorLink  from "react-anchor-link-smooth-scroll";
 const Productpage= () =>
 { 
   /* selects all products with type 'Cupcake'in the productlist (Data.json) and
@@ -65,21 +65,39 @@ const Productpage= () =>
         <div className='products'>
           <h1>Products</h1>
           <div  className="cakes">
-            <h2>CupCakes</h2>
+            <h2 id="Cupcakes">CupCakes</h2>
+            <AnchorLink href="#Birthdaycakes">
+              <button >Birthdaycakes</button>
+            </AnchorLink>
+            <AnchorLink href="#Weddingcakes">
+              <button >Weddingcakes</button>
+          </AnchorLink>
             {/* All cupcakes  */}
             <div className="cakedisplay">
               {Data.map(allCupCakes)}
             </div>
           </div>
             <div className='cakes'>
-            <h2>BirthdayCakes</h2>
+            <h2 id="Birthdaycakes">BirthdayCakes</h2>
+            <AnchorLink href="#Cupcakes">
+              <button >Cupcakes</button>
+            </AnchorLink>
+            <AnchorLink href="#Weddingcakes">
+              <button >Weddingcakes</button>
+            </AnchorLink>
             {/* All birthdaycakes  */}
             <div className="cakedisplay">
               {Data.map(allBirthdayCakes)}
             </div>
             </div>
             <div className='cakes'>
-            <h2>WeddingCakes</h2>
+            <h2 id="Weddingcakes">WeddingCakes</h2>
+            <AnchorLink href="#Cupcakes">
+              <button >Cupcakes</button>
+            </AnchorLink>
+            <AnchorLink href="#Birthdaycakes">
+              <button >Birthdaycakes</button>
+          </AnchorLink>
             {/* All weddingcakes */}
             <div className="cakedisplay">
               {Data.map(allWeddingCakes)}

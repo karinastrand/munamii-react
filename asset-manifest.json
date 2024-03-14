@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/munamii-react/static/css/main.280c50fb.css",
-    "main.js": "/munamii-react/static/js/main.71b94cfb.js",
+    "main.js": "/munamii-react/static/js/main.4f188667.js",
     "static/js/453.051e4fd5.chunk.js": "/munamii-react/static/js/453.051e4fd5.chunk.js",
     "static/media/StartCake.png": "/munamii-react/static/media/StartCake.b423fe948bfc9f909284.png",
     "static/media/CupCake13.png": "/munamii-react/static/media/CupCake13.ab0309a585c0f742e3b6.png",
@@ -43,11 +43,11 @@
     "static/media/munamii.png": "/munamii-react/static/media/munamii.44ddf12f1e8d4989f58d.png",
     "index.html": "/munamii-react/index.html",
     "main.280c50fb.css.map": "/munamii-react/static/css/main.280c50fb.css.map",
-    "main.71b94cfb.js.map": "/munamii-react/static/js/main.71b94cfb.js.map",
+    "main.4f188667.js.map": "/munamii-react/static/js/main.4f188667.js.map",
     "453.051e4fd5.chunk.js.map": "/munamii-react/static/js/453.051e4fd5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.280c50fb.css",
-    "static/js/main.71b94cfb.js"
+    "static/js/main.4f188667.js"
   ]
 }

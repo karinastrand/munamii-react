@@ -12,7 +12,10 @@
         <Menu />
         <div className='start'>
             <img src={img} alt="startcake"/>
-            <Info />  
+            <div className='infostart'>
+              <Info />  
+            </div>
+            
         </div>
         <Footer />
       </div>

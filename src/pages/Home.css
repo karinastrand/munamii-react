@@ -21,7 +21,7 @@ body
         justify-items: center;
         max-width: 90%;
         max-height: auto;
-        border-radius: 10px;
+        border-radius: 5%;
         margin: 25px;
 
     }
@@ -33,15 +33,23 @@ body
     {
         display: flex;
         flex-direction: row;
+        margin-top: 30px;
+        margin-left: 30px;
     }
     .start >img
     {
         align-items: center;
-        max-width: 60%;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-      
+        max-width: 50%;
+        max-height: 80%;
+        border-radius: 5%;
+       
     }
+    
 }
     
+.infostart
+    {
+        justify-self: center;
+        align-self: center;
+      
+    }

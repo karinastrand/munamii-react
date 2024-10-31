@@ -1,6 +1,6 @@
 # Munammi cakery
 en app som säljer kakor byggd som project under min utbildning på Lexicon i Malmö, påbyggnad programmering
-Appen är byggd i react
+Appen är byggd i react och publicerad från git: https://karinastrand.github.io/munamii-react/
 Skärmklipp:
 
 
